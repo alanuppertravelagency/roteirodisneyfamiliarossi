@@ -1,0 +1,7 @@
+[functions]
+  directory = "netlify/functions"
+
+# Roda todo dia às 10:00 UTC (07:00 no horário de Brasília)
+[[scheduled.functions]]
+  name = "send-reminders"
+  schedule = "0 10 * * *"
